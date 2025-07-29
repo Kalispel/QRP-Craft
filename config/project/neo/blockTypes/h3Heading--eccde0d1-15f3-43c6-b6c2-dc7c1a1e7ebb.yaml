@@ -1,0 +1,48 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 80cf2284-281d-4bf9-ac05-6871b359c265 # H3 Heading
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  28ee09d2-19de-421d-a3cf-2d36a8f56a23:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-07T21:06:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 92489f8e-11e6-4f01-bc0e-e09fee99ffee # H3 Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a6c1ff4-db3d-4167-85e9-5d7bfb8c3850
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2c23d28f-0d0a-4f0d-b3d9-7ebd4de7c373
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: h3Heading
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'H3 Heading'
+topLevel: false

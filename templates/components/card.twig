@@ -1,0 +1,12 @@
+{# components/card.twig #}
+{% set cardId = 'card-' ~ block.id %}
+
+<div id="{{ cardId }}" class="card">
+  {# loop through each nested neo-block inside this Card #}
+  {% for child in block.children.all() %}
+    {% include 'components/' ~ child.type.handle with {
+      block: child,
+      entry: entry
+    } only %}
+  {% endfor %}
+</div>

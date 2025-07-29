@@ -1,0 +1,65 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 4172d71e-3d5f-4e7f-b1fc-e1e1eee144b1 # Background Image
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  4aa628dc-4aee-4ced-9134-c80b3826ac37:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-07T21:13:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 76d6cdc7-f69d-4c30-9139-060120bf0469 # Component URL
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44ed98d6-d30d-48fb-ae89-f2d17268e294
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-08T18:52:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c50ae162-2ed3-4888-87f2-f195abdb58b5 # Image Darkness
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc6ea238-ec01-41bb-8f4c-37223a211f84
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8ffcfb54-1de2-43f1-831e-4e613e4f4093
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: backgroundImage
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 1
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Background Image'
+topLevel: false

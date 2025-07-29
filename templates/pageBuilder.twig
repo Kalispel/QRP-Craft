@@ -1,0 +1,41 @@
+{# extends "index" %}
+{% block content %}
+
+<!-- START PAGE BUILDER -->
+<main class="page-builder">
+  {% for section in entry.pageBuilder.level(1).all() %}
+    <section id="section-{{ section.id }}" class="section">
+    
+    {% for column in section.children.all() %}
+      <div id="column-{{ column.id }}" class="column">
+        {% for group in column.children.all() %}
+          {% if group.type.handle == 'components' %}
+            <div id="components-{{ group.id }}" class="components">
+            {% for block in group.children.all() %}
+              <!--Component handle: {{ block.type.handle }}-->
+              {% include 'components/' ~ block.type.handle with {block: block, entry: entry} only %}
+            {% endfor %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+    </section>
+  {% endfor %}
+</main>
+{% endblock #}
+
+{% extends "index" %}
+{% block content %}
+
+<main class="page-builder">
+  {% for section in entry.pageBuilder.level(1).all() %}
+    {% include 'pageBuilder/_renderBlock.twig' with { block: section, entry: entry } %}
+  {% endfor %}
+  {% if entry.viewBorders %}
+    {% do craft.app.view.registerCssFile(siteURL ~ 'static/css/borders.css') %}
+  {% endif %}
+</main>
+
+{% endblock %}
+

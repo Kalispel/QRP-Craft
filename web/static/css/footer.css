@@ -1,0 +1,110 @@
+.sponsors-container {
+    padding: 50px;
+    background-color: #b20a24;
+}
+
+.sponsors-container {
+  text-align: center;
+}
+
+.sponsors-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.sponsor-logo {
+  max-height: 60px;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform .2s;
+}
+
+.footer {
+  background: #2f2a28;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer__col {
+  flex: 1 1 250px;
+}
+
+/* ---- Contact column ---- */
+
+.footer__address {
+  margin-bottom: 24px;
+}
+.footer__address-title {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #bbb;
+}
+.footer__address-lines {
+  line-height: 1.4;
+}
+
+/* ---- Nav column ---- */
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- Social column ---- */
+.footer__social-link img {
+  width: 150px;
+}
+
+.footer__social-title {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.footer__highlight {
+  color: #e91e63;
+  font-style: italic;
+}
+.footer__social-icons {
+  display: flex;
+  gap: 16px;
+}
+.footer__social-link img {
+  display: block;
+  max-width: 50px;
+}
+  
+#NHRA {
+  max-width: 100px !important;
+}
+
+/* ---- Divider ---- */
+.footer__divider {
+  height: 1px;
+  background: #555;
+  margin: 40px auto 0;
+  max-width: 1200px;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

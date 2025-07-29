@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: verticallyCentered
+instructions: null
+name: 'Vertically Centered'
+searchable: false
+settings:
+  default: false
+  offLabel: 'Not Centered'
+  onLabel: Centered
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

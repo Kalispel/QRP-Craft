@@ -1,0 +1,48 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 867ff3af-f895-4ca2-bdda-0add7201aa4f # H6 Heading
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  590c0deb-90a8-483e-8a69-69dd88adcb1c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-11T23:13:58+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 19a29249-9f0a-444c-8c00-355e0dafe58b # H6 Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b2013f8-d216-4af7-9fe6-9156e0968418
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 108a806c-e9d0-4b86-8d2d-a2b9d45cfe3b
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: h6Heading
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'H6 Heading'
+topLevel: false

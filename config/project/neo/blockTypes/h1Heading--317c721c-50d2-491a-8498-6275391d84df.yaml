@@ -1,0 +1,48 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 9f160980-07d0-466e-ae0a-fc68ed8dfeeb # H1 Heading
+field: de9259b6-806c-4f2c-8991-f5f3f854d650 # Components
+fieldLayouts:
+  55b32898-3045-4fc4-b8a0-e8ab078630b5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-06T06:06:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dd4fe4c2-b508-4298-9820-b4b13cab9e32 # H1 Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f292344-8cf8-47ff-bd11-57221b516123
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7f134ead-8669-40a3-bcc4-fd78a800e363
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: h1Heading
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'H1 Heading'
+topLevel: true

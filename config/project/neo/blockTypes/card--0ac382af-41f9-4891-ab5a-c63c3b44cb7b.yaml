@@ -1,0 +1,25 @@
+childBlocks:
+  - copy
+  - h3Heading
+  - button
+  - backgroundColor
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: null
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+group: null
+groupChildBlockTypes: true
+handle: card
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Card
+topLevel: false

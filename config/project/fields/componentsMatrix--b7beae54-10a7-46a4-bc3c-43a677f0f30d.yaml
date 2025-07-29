@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: componentsMatrix
+instructions: null
+name: 'Components Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 9f160980-07d0-466e-ae0a-fc68ed8dfeeb # H1 Heading
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 80cf2284-281d-4bf9-ac05-6871b359c265 # H3 Heading
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 656c2b85-c41c-4820-9494-ddfe278d183e # Copy
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

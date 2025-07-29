@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: d1caae6a-7b76-44f6-8d86-02c794bb5a4c # Sections
+handle: homePage
+maxAuthors: 1
+name: 'Home Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  977676e9-99d4-478f-bc0c-cc4050051cf5: # qrp
+    enabledByDefault: true
+    hasUrls: true
+    template: regularPageBuilder.twig
+    uriFormat: __home__
+type: single

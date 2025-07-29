@@ -1,0 +1,36 @@
+childBlocks:
+  - customEmbed
+  - section
+  - column
+  - components
+  - container
+  - styling
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 0fe48968-a45c-49d4-94a7-5cdde640f512 # Container
+field: 2ea47bbc-6f12-44ad-b685-61b5c862a07d # Page Builder
+fieldLayouts:
+  0c87f0a6-383a-4aaa-a48c-bbb12a980480:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: f90a017e-3056-47f8-bb36-1e02dab55ecb
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: container
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Container
+topLevel: false

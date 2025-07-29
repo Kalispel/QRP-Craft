@@ -1,0 +1,89 @@
+{% do view.registerCssFile( siteUrl('static/css/regularPageBuilder.css') ) %}
+
+{% extends "index" %}
+{% block content %}
+<main class="regular-page-builder">
+
+  {# single loop over everything at level 1 #}
+  {% for section in entry.regularPageBuilder.level(1).all() %}
+    {% set sectionHandle = section.type.handle %}
+
+    {# —— one-column —— #}
+    {% if sectionHandle == 'oneColumnSection' %}
+      <section id="section-{{ section.id }}" class="one-column-section">
+        {% for column in section.children.type('column').all() %}
+          <div id="column-{{ column.id }}" class="column">
+            <div class="component-wrapper">
+            {% for block in column.children.all() %}
+              {% include 'components/' ~ block.type.handle with { block: block, entry: entry } only %}
+            {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+
+    {# —— two-column —— #}
+    {% elseif sectionHandle == 'twoColumnSection' %}
+      <section id="section-{{ section.id }}" class="two-column-section">
+        <div class="columns-wrapper">
+          {% for column in section.children.type('column').all() %}
+            <div id="column-{{ column.id }}" class="grid-column">
+              <div class="component-wrapper">
+              {% for block in column.children.all() %}
+                {% include 'components/' ~ block.type.handle with { block: block, entry: entry } only %}
+              {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+    {# —— two-column hero —— #}
+    {% elseif sectionHandle == 'twoColumnHero' %}
+      <section id="section-{{ section.id }}" class="two-column-hero">
+        <div class="columns-wrapper">
+          {% for column in section.children.type('column').all() %}
+            <div id="column-{{ column.id }}" class="grid-column">
+            <div class="component-wrapper">
+              {% for block in column.children.all() %}
+                {% include 'components/' ~ block.type.handle with { block: block, entry: entry } only %}
+              {% endfor %}
+            </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+    {# CARD SECTION with a single-column wrapper #}
+    {% elseif sectionHandle == 'cardSection' %}
+    <section id="section-{{ section.id }}" class="card-section">
+        <div id="column-{{ section.id }}" class="column">
+        <div class="card-wrapper">
+            {% for block in section.children.all() %}
+            {% include 'components/' ~ block.type.handle with { block: block, entry: entry } only %}
+            {% endfor %}
+        </div>
+        </div>
+    </section>
+
+    {# —— one-column —— #}
+    {% elseif sectionHandle == 'centeredOneColumnSection' %}
+      <section id="section-{{ section.id }}" class="centered-one-column-section">
+        {% for column in section.children.type('column').all() %}
+          <div id="column-{{ column.id }}" class="column">
+            <div class="component-wrapper">
+            {% for block in column.children.all() %}
+              {% include 'components/' ~ block.type.handle with { block: block, entry: entry } only %}
+            {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+
+    {% endif %}
+
+
+  {% endfor %}
+
+</main>
+{% endblock %}

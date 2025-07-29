@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en
+name: qrp
+primary: true
+siteGroup: 5318da5d-8ef1-4c83-b094-7474c64d30dc # qrp
+sortOrder: 1

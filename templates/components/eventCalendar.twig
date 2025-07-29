@@ -1,0 +1,59 @@
+{# templates/components/eventCalendar.twig #}
+
+{# dynamically link the css file in the html header #}
+{% do view.registerCssFile(url( siteURL ~ 'static/css/calendar.css')) %}
+
+{# Display an html comment with the block's handle #}
+<!--Component handle: {{block.type.handle}}-->
+
+{# Only render if there are rows in the “Event Table” field #}
+{% if block.eventCalendar|length %}
+
+  {# Sort all events chronologically #}
+  {% set events = block.eventCalendar|sort((a, b) => (a.date|date('U') < b.date|date('U')) ? -1 : 1) %}
+
+  <section class="event-calendar">
+    <table>
+      <tbody>
+        {# Track the last month printed #}
+        {% set lastMonth = '' %}
+
+        {% for event in events %}
+          {% set thisMonth = event.date|date('F Y') %}
+
+          {# Whenever the month (and year) changes, print a header #}
+          {% if thisMonth != lastMonth %}
+            <tr class="month-header">
+              <td colspan="3">{{ thisMonth }}</td>
+            </tr>
+            {% set lastMonth = thisMonth %}
+          {% endif %}
+
+          {# render the event row #}
+          <tr>
+
+            {# day of month #}
+            <td class="event-date">
+              {{ event.date|date('j') }}
+              <span class="event-day">/ {{ event.date|date('D') }}</span>
+            </td>
+            <td class="event-title">{{ event.title }}</td>
+
+            {# button #}
+            <td class="event-btn">
+
+              {# if there's a button, display a button. #}
+              {% if event.buttonUrl %}
+                {% set btnText = event.buttonTitle ?: 'Learn More' %}
+                <a href="{{ event.buttonUrl }}" class="event-calendar__btn">
+                  {{ btnText|upper }}
+                </a>
+              {% endif %}
+            </td>
+
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endif %}

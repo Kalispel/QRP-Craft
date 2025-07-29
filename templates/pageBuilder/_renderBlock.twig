@@ -1,0 +1,77 @@
+{% set blockType = block.type.handle %}
+{% set blockId = blockType ~ '-' ~ block.id %}
+
+{# Styling component #}
+{% if blockType == 'styling' %}
+  {% set pt = block.paddingTop ?? '' %}
+  {% set pr = block.paddingRight ?? '' %}
+  {% set pb = block.paddingBottom ?? '' %}
+  {% set pl = block.paddingLeft ?? '' %}
+  {% set containerHeight = block.height ?? '' %}
+  {% set maximumWidth = block.maxWidth ?? '' %}
+  {% set backgroundColor = block.backgroundColor ?? '' %}
+  {% set horizontallyCenteredContent = block.horizontallyCentered ?? '' %}
+  {% set verticallyCenteredContent = block.verticallyCentered ?? '' %}
+  {% set containerImage = block.backgroundImage ?? '' %}
+
+  {# if any of the fields are filled out, then make a style tag with that field. #}
+  {% if pt or pr or pb or pl or maximumWidth or backgroundColor or horizontallyCenteredContent or verticallyCenteredContent or containerImage %}
+<style>
+#{{ block.parent.type.handle }}-{{ block.parent.id }} {
+{% if pt %}padding-top: {{ pt }}px; {% endif %}
+{% if pr %}padding-right: {{ pr }}px; {% endif %}
+{% if pb %}padding-bottom: {{ pb }}px; {% endif %}
+{% if pl %}padding-left: {{ pl }}px; {% endif %}
+{% if containerHeight %}height: {{containerHeight}}; {% endif %}
+{% if maximumWidth %}max-width: {{maximumWidth}}px; {% endif %}
+{% if backgroundColor %}background-color: {{backgroundColor}}; {% endif %}
+{% if horizontallyCenteredContent %}margin-left: auto; margin-right: auto; justify-content: center; {% endif %}
+{% if verticallyCenteredContent %}margin-top: auto; margin-bottom: auto; align-items: center; {% endif %}
+{% if containerImage %}background-image: url({{containerImage}}){% endif %}
+}
+</style>
+  {% endif %}
+{% endif %}
+
+{# Section block #}
+{% if blockType == 'container' %}
+  <div id="{{ blockId }}" class="container">
+    {% for child in block.children.all() %}
+      {% include 'pageBuilder/_renderBlock.twig' with { block: child, entry: entry } %}
+    {% endfor %}
+  </div>
+
+{# Section block #}
+{% elseif blockType == 'section' %}
+  <section id="{{ blockId }}" class="section">
+    {% for child in block.children.all() %}
+      {% include 'pageBuilder/_renderBlock.twig' with { block: child, entry: entry } %}
+    {% endfor %}
+  </section>
+
+{# Column block #}
+{% elseif blockType == 'column' %}
+  <div id="{{ blockId }}" class="column">
+    {% for child in block.children.all() %}
+      {% include 'pageBuilder/_renderBlock.twig' with { block: child, entry: entry } %}
+    {% endfor %}
+  </div>
+
+{# Components wrapper block #}
+{% elseif blockType == 'components' %}
+  <div id="{{ blockId }}" class="components">
+    {% for child in block.children.all() %}
+        {% set handle = child.type.handle %}
+        {% if handle not in ['padding','backgroundColor'] %}
+            {% include 'components/' ~ handle with { block: child, entry: entry } only %}
+        {% endif %}
+        {% endfor %}
+  </div>
+
+{% elseif blockType == 'customEmbed' %}
+    {% include 'components/customEmbed' with {block: block, entry: entry} only %}
+
+{# Fallback #}
+{% else %}
+
+{% endif %}

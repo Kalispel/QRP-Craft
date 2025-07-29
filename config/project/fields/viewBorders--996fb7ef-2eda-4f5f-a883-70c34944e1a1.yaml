@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: viewBorders
+instructions: null
+name: 'View Borders'
+searchable: false
+settings:
+  default: false
+  offLabel: 'Borders Off'
+  onLabel: 'Borders On'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,74 @@
+color: null
+description: null
+fieldLayouts:
+  18b2926e-c953-4b9c-a72b-5629ab0d8f02:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-03T19:04:41+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2ea47bbc-6f12-44ad-b685-61b5c862a07d # Page Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e130f1b-ea23-4528-9161-76abac4f9e08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-06T05:44:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 996fb7ef-2eda-4f5f-a883-70c34944e1a1 # View Borders
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00e8342b-505f-4add-930e-68a4d74d883e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-07T22:14:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f03cc55a-5192-43bf-a685-dfd6cc9df910
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 70699415-c085-4376-b806-ca9044f7d0dd
+        userCondition: null
+handle: pageBuilder
+hasTitleField: false
+icon: null
+name: 'Page Builder'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

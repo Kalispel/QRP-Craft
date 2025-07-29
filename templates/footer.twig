@@ -1,0 +1,86 @@
+{# footer.twig #}
+{% do view.registerCssFile( siteUrl('static/css/footer.css') ) %}
+
+{% set logos = footer.sponsors.type('image').all() %}
+
+<footer>
+  <div class="sponsors-container">
+    <h3 class="h3Heading"><em>OUR PARTNERS</em></h3>
+    <div class="sponsors-logos">
+      {% for logo in logos %}
+        <img
+          class="sponsor-logo"
+          src="{{ logo.componentUrl }}"
+          alt="{{ logo.altText }}"
+          loading="lazy"
+        >
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+<footer class="footer">
+  <div class="footer__inner">
+    <!-- column 1: contact & addresses -->
+    <div class="footer__col footer__col--contact">
+      <a href="/contact-us" class="btn">CONTACT US</a>
+
+      <div class="footer__address">
+        <h4 class="footer__address-title">Physical Address</h4>
+        <p class="footer__address-lines">
+          Qlispé Raceway Park<br>
+          750 N Hayford Rd<br>
+          Airway Heights, WA 99001
+        </p>
+      </div>
+
+      <div class="footer__address">
+        <h4 class="footer__address-title">Mailing Address</h4>
+        <p class="footer__address-lines">
+          Qlispé Raceway Park<br>
+          100 N Hayford Rd<br>
+          Airway Heights, WA 99001
+        </p>
+      </div>
+    </div>
+
+    <!-- column 2: nav links -->
+    <div class="footer__col footer__col--nav">
+      {% set sections = craft.app.entries.getAllSections() %}
+
+      <nav class="footer__nav">
+          {% for section in sections %}
+            {% set entry = craft.entries()
+              .section(section.handle)
+              .one() 
+            %}
+
+            {% if entry.regularPageBuilder %}
+              {% for navBlock in entry.regularPageBuilder.level(1).all() %}
+                {% if navBlock.showInNav %}
+                  <a class="footer__nav-link" href="{{ entry.url }}">{{ section.name }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+      </nav>
+    </div>
+
+    <!-- column 3: social -->
+    <div class="footer__col footer__col--social">
+      <h2 class="footer__social-title">
+        Let’s stay<br>
+        <span class="footer__highlight">connected</span>
+      </h2>
+      <div class="footer__social-icons">
+        <a href="https://www.nhra.com" target="_blank" class="footer__social-link">
+          <img id="NHRA" src="https://cdn.prod.website-files.com/62040b01376080df0ae5c086/642f4d896f1e9c4ebdf04804_NHRA%20Member%20Track.svg" alt="NHRA Member Track">
+        </a>
+        <a href="https://www.facebook.com/Qlisperacewaypark" target="_blank" class="footer__social-link">
+          <img id="facebook" src="https://cdn.prod.website-files.com/62040b01376080df0ae5c086/628d6e88bc81207c5af0c2a7_f_logo_RGB-White_58.png" alt="Facebook">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__divider"></div>
+</footer>

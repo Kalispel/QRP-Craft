@@ -1,0 +1,24 @@
+{# components/backgroundImage.twig #}
+{% set imageUrl  = block.componentUrl     ?? '' %}
+{% set darkFrac  = block.imageDarkness    ?? 0  %}
+{% set bright   = (1 - darkFrac) | round(2)  %}
+
+{% if imageUrl %}
+  <style>
+    #column-{{ block.parent.id }} {
+      position: relative;
+      overflow: hidden;
+    }
+    #bg-img-{{ block.id }} {
+      position: absolute;
+      inset: 0;
+      background: url("{{ imageUrl }}") no-repeat center center;
+      background-size: cover;
+      /* brightness(1) = full image; brightness(0) = black */
+      filter: brightness({{ bright }});
+      z-index: -1;
+    }
+  </style>
+
+  <div id="bg-img-{{ block.id }}"></div>
+{% endif %}

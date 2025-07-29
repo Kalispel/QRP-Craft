@@ -1,0 +1,156 @@
+/* ——— Event Calendar ——— */
+.event-calendar {
+  background: #fff;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Month header bar */
+.event-calendar .month-header td {
+  background: #3c3232 !important;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Cells */
+.event-calendar td {
+  padding: 0.8rem 1rem;
+  vertical-align: middle;
+  border: none;
+}
+
+/* Date column */
+.event-calendar .event-date {
+  width: 20%;
+  color: #222;
+  font-size: 1rem;
+}
+.event-calendar .event-day {
+  margin-left: 0.25rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Title column */
+.event-calendar .event-title {
+  width: 60%;
+  color: #111;
+  font-size: 1rem;
+}
+
+/* Button column */
+.event-calendar .event-btn {
+  width: 20%;
+  text-align: right;
+}
+
+/* Button styling */
+.event-calendar__btn {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: #e60d2e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.event-calendar__btn:hover {
+  background: #b0174a;
+}
+
+/* Desktop‐only stripes */
+@media (min-width: 601px) {
+  .event-calendar tbody tr:nth-of-type(odd)  td { background: #f4ecec; }
+  .event-calendar tbody tr:nth-of-type(even) td { background: #fff;    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  /* make table elements block for flex rows */
+  .event-calendar table,
+  .event-calendar thead,
+  .event-calendar tbody {
+    display: block;
+    width: 100%;
+  }
+
+  /* month headers stay as bars */
+  .event-calendar tr.month-header {
+    display: block;
+    padding: 0.75rem 1rem;
+    background: #3c3232;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  /* each event row becomes a flex “card” */
+  .event-calendar tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background: #fff;
+    padding: 0.75rem 1rem;
+  }
+
+  /* clear out old cell backgrounds */
+  .event-calendar td {
+    border: none;
+    padding: 0;
+    background: transparent !important;
+  }
+
+  /* mobile stripes on the rows (skip month headers) */
+  .event-calendar tbody tr:not(.month-header):nth-of-type(odd)  { background: #f4ecec; }
+  .event-calendar tbody tr:not(.month-header):nth-of-type(even) { background: #fff;    }
+
+  /* Date cell */
+  .event-calendar td.event-date {
+    flex: 0 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+  }
+  .event-calendar .event-day {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+  }
+
+  /* Title cell */
+  .event-calendar td.event-title {
+    flex: 1 1 auto;
+    padding: 0 1rem;
+    line-height: 1.3;
+  }
+
+  /* Button cell drops below */
+  .event-calendar td.event-btn {
+    flex: 0 0 100%;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  /* button styling */
+  .event-calendar__btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

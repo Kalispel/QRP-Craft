@@ -1,0 +1,163 @@
+dateModified: 1753825809
+email:
+  fromEmail: alistairjones937@gmail.com
+  fromName: qrp
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  cloudinary:
+    name: Cloudinary
+    settings:
+      apiKey: '683341323995319'
+      apiSecret: CxraklWStYqiUzB3NZ7wOlp5Ek8
+      cloudName: kalispel
+      cname: ''
+      dynamicFolders: false
+      privateCdn: true
+    type: thomasvantuycom\craftcloudinary\fs\CloudinaryFs
+    url: null
+  general:
+    hasUrls: true
+    name: General
+    settings:
+      path: '@webroot/assets/general'
+    type: craft\fs\Local
+    url: '@web/assets/general'
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+meta:
+  __names__:
+    0ac382af-41f9-4891-ab5a-c63c3b44cb7b: Card # Card
+    0ada324d-e352-4a29-a266-4049631fa4b7: Button # Button
+    0d983459-bc2d-4ed0-ae05-e34319279d60: Image # Image
+    0fe48968-a45c-49d4-94a7-5cdde640f512: Container # Container
+    1a4a5d82-9a9d-4b8e-80d2-479638c35f9b: 'Background Image' # Background Image
+    2a77e6d5-5620-49d7-bd24-73e4c1d10bac: 'Table Picker' # Table Picker
+    2ea47bbc-6f12-44ad-b685-61b5c862a07d: 'Page Builder' # Page Builder
+    4a22f8a4-7755-4117-9a18-3149b0200160: 'Background Image' # Background Image
+    4a46d949-18d0-45be-9ddd-b36f3c861030: 'H6 Heading' # H6 Heading
+    4a53280d-d7a9-4d81-8fd5-110269fd274c: headings # headings
+    04f6945e-a804-44ba-88dc-2425bfa5a7c7: 'Event Calendar' # Event Calendar
+    5c6108bf-1d4c-4147-ae16-62b60e4ff19b: Components # Components
+    6a583cf4-f6f4-4180-a6ee-eeb4396aeb97: 'Vertical Padding' # Vertical Padding
+    6ba4d274-6283-4df7-8439-0da023f67f1c: Image # Image
+    6d74c498-0b47-478f-8fd3-09978c12d3cf: 'Background Video' # Background Video
+    6d9880e5-ef06-4385-be76-c8e8155b49a0: Copy # Copy
+    7fc97af9-0634-46b2-88f4-05267632dfc0: Copy # Copy
+    7fca37fb-c653-4474-ac2a-702d7cd528ce: Footer # Footer
+    8b0b0d5f-c24a-4888-a721-ceba9000ffcb: 'Vertical Padding' # Vertical Padding
+    9a82a758-92a8-43b8-b084-e6ae5784cb7e: 'Show In Nav' # Show In Nav
+    9bee04cb-7433-4cb4-8c29-7438b1efcbac: Styling # Styling
+    09caf147-3588-4c68-abe8-6b13d0038c63: 'Centered One Column Section' # Centered One Column Section
+    9f160980-07d0-466e-ae0a-fc68ed8dfeeb: 'H1 Heading' # H1 Heading
+    17a07c7f-6fed-4095-998b-47234e1f0121: 'Background Color' # Background Color
+    19a29249-9f0a-444c-8c00-355e0dafe58b: 'H6 Heading' # H6 Heading
+    19c31ceb-a7bb-4eab-897a-9f162343ace3: 'Padding Right (Pixels)' # Padding Right (Pixels)
+    22b3fc84-2fbb-4ddc-9ed2-2389dd334699: 'Regular Page Builder' # Regular Page Builder
+    28b4795e-d1dd-47c8-8275-c76b494318c8: 'Show In Nav' # Show In Nav
+    31aae467-844e-4eb5-9534-061c1bc5d67e: 'Padding Left (Pixels)' # Padding Left (Pixels)
+    33a9349a-dfb1-44cc-83c0-168f93ea942a: Centered # Centered
+    45e0abaa-be87-4d4b-b69b-5299d160e502: Padding # Padding
+    60cd6165-845a-491c-9f06-99be16399656: 'Road Course' # Road Course
+    76d6cdc7-f69d-4c30-9139-060120bf0469: 'Component URL' # Component URL
+    76d257d7-1739-4800-a664-a7d6ebae557b: 'One Column Section' # One Column Section
+    80cf2284-281d-4bf9-ac05-6871b359c265: 'H3 Heading' # H3 Heading
+    91b3225b-5ed8-4ed1-ab3c-6a6757b88b17: Column # Column
+    96a92130-7ddb-4d5a-9077-db086bd9bd4d: FAQs # FAQs
+    108a2396-e640-4a00-abd3-0ee3b582480b: 'Vertical Padding (Pixels)' # Vertical Padding (Pixels)
+    317c721c-50d2-491a-8498-6275391d84df: 'H1 Heading' # H1 Heading
+    381c27c0-d1de-4b58-b589-743e89179393: 'H3 Heading' # H3 Heading
+    394b8286-4d39-4831-aea8-a4dcf7636059: 'Background Color' # Background Color
+    409c10e3-5184-4f77-acba-b7ae3c73bf64: 'Event Calendar' # Event Calendar
+    537edae3-4634-45c9-8606-453ed71e4b18: 'Show In Nav' # Show In Nav
+    544ccc01-af38-442c-b3a5-0e93e3d1f7b8: Table # Table
+    601c0947-f3fe-41e5-af0a-53cbd83039fa: Label # Label
+    656c2b85-c41c-4820-9494-ddfe278d183e: Copy # Copy
+    799e32f8-28ae-4a24-b1c3-ae444fdeeefc: 'Custom Embed' # Custom Embed
+    830f1c40-19d9-455a-92dd-fb15f42bdf75: 'Alt Text' # Alt Text
+    867ff3af-f895-4ca2-bdda-0add7201aa4f: 'H6 Heading' # H6 Heading
+    965f3661-f0cd-4bce-aea4-5bd098515336: 'Drag Strip Events' # Drag Strip Events
+    996fb7ef-2eda-4f5f-a883-70c34944e1a1: 'View Borders' # View Borders
+    1187b93c-b8be-467e-b7bc-49764a2cf85a: Button # Button
+    4172d71e-3d5f-4e7f-b1fc-e1e1eee144b1: 'Background Image' # Background Image
+    5318da5d-8ef1-4c83-b094-7474c64d30dc: qrp # qrp
+    6899b35a-5e18-4456-9085-0fa4e457d490: 'Two Column Hero' # Two Column Hero
+    8400a265-891c-402d-b125-57c8283677d3: 'Home Page' # Home Page
+    9120baa9-5124-40cb-aad5-94d005f449ea: 'Table Block' # Table Block
+    14914e09-4991-42ac-802a-c51aca38757b: Button # Button
+    015313e7-24d2-4398-b9fd-16aff129995d: Section # Section
+    92489f8e-11e6-4f01-bc0e-e09fee99ffee: 'H3 Heading' # H3 Heading
+    590078e4-d32e-4c02-b0c5-c14c6e131c63: 'H1 Heading' # H1 Heading
+    977676e9-99d4-478f-bc0c-cc4050051cf5: qrp # qrp
+    7596368b-0756-448f-8921-e9b49eaf68fd: 'H3 Heading' # H3 Heading
+    30380684-e960-486d-abc5-205ec77f6253: 'Height (Any Unit)' # Height (Any Unit)
+    34005200-1e86-4910-b074-9034d2ed3213: 'Component Title' # Component Title
+    55287344-8041-492b-b859-91d677f857e1: 'Two Column Section' # Two Column Section
+    a37e8654-084a-40d3-8ecb-f485a7dab8e4: 'Event Calendar' # Event Calendar
+    a248a5e7-94bf-4f63-9d43-a22e597ec470: 'Custom Embed' # Custom Embed
+    a248a70b-29e0-48a0-9095-40970b94274e: 'Page Builder' # Page Builder
+    a542f72c-f52a-4f57-a6c5-b46a4f2a1fb4: 'Custom Embed' # Custom Embed
+    aa0886e5-6b62-4c5c-9625-b8cab0619a6a: 'Vertically Centered' # Vertically Centered
+    abf0cc30-8ff2-4e40-b419-4353440d53e7: 'Class Picker' # Class Picker
+    ad815d59-3f1a-4a6b-8a72-fd922f75a181: Copy # Copy
+    b7beae54-10a7-46a4-bc3c-43a677f0f30d: 'Components Matrix' # Components Matrix
+    b2713566-144c-4412-9f2a-080d1ebf217a: 'Event Calendar' # Event Calendar
+    bd5e3ed6-f1bb-4a77-bb95-6b22bbed0924: 'Standings 2023' # Standings 2023
+    be024036-351c-423d-9cf7-6855dddf23c5: 'Show In Nav' # Show In Nav
+    bec6a067-8e9a-4c1b-bb98-c958c2afad67: Styling # Styling
+    bf71b605-2794-4aa0-8b05-6bb998ff4954: 'Table Title' # Table Title
+    bf4854a6-dc7e-49aa-afe4-5a8a6716ded5: Table # Table
+    c50ae162-2ed3-4888-87f2-f195abdb58b5: 'Image Darkness' # Image Darkness
+    c4507a00-c0e2-4961-a960-34dedb8309ac: Sponsors # Sponsors
+    c7432327-05b1-4d74-b04f-798554b06036: 'Padding Top (Pixels)' # Padding Top (Pixels)
+    c8813489-490b-4714-8369-00b87d20132a: 'Background Color' # Background Color
+    cb47f35f-ec0a-4066-a291-2c2e8547ab57: Sponsors # Sponsors
+    cbd20d60-6584-4240-8a58-c3b852583e04: 'Class Picker' # Class Picker
+    cf8c4037-9900-41c9-9c09-3cd1fc3aeae7: Card # Card
+    d1caae6a-7b76-44f6-8d86-02c794bb5a4c: Sections # Sections
+    d71b8acd-be28-4376-829e-c98eb9ad3f21: 'The Track' # The Track
+    dc72fe8c-a300-4418-bb10-258d3b110ff8: Table # Table
+    dd4fe4c2-b508-4298-9820-b4b13cab9e32: 'H1 Heading' # H1 Heading
+    de9259b6-806c-4f2c-8991-f5f3f854d650: Components # Components
+    e1b8c9a5-e3de-46dc-8551-8fa39e495e2a: Container # Container
+    e6d1d612-8920-4c57-afb7-59269d21d93c: 'Max Width' # Max Width
+    e15d79c9-9e1b-4609-aa75-2cc771051cf2: 'H1 Heading' # H1 Heading
+    e37ced52-f0ef-450f-8b26-bce3ed7ca97f: 'Padding Bottom (Pixels)' # Padding Bottom (Pixels)
+    e3996220-e983-4700-b890-355eeae050eb: 'Card Section' # Card Section
+    e4550157-f9c0-4112-a8bb-6ffcdc1c6da0: Images # Images
+    eccb8b72-c252-4468-8ed2-441a22decd64: 'Background Video' # Background Video
+    eccde0d1-15f3-43c6-b6c2-dc7c1a1e7ebb: 'H3 Heading' # H3 Heading
+    ed851ec1-c093-45e9-b3ab-b7d0a102e0ba: Column # Column
+    ff901776-5101-409c-9ddf-704edae61a95: 'Standings 2024' # Standings 2024
+plugins:
+  cloudinary:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: HESO664E2JG8APYWL3ZEA8I1
+    schemaVersion: 5.1.0.1
+  sheets-to-tables:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  tablemaker:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+system:
+  edition: solo
+  live: true
+  name: qrp
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

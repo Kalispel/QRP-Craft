@@ -1,0 +1,126 @@
+{# templates/components/tablePicker.twig #}
+
+{% do view.registerCssFile( siteUrl('static/css/tablePicker.css') ) %}
+
+{# Fetch all “Table” blocks into a clearly named variable #}
+{% set tableBlocks = block.children.type('table').all() %}
+
+{% if tableBlocks|length %}
+  <div class="table-selector-wrapper">
+
+    {# — Red button-styled dropdown for picking a table #}
+    <select
+      id="table-dropdown-{{ block.id }}"
+      class="table-dropdown"
+    >
+      {% for tableBlock in tableBlocks %}
+        {# derive a URL-friendly slug from the title #}
+        {% set tableTitle = tableBlock.tableTitle %}
+        {% set tableSlug  = tableTitle|lower|replace({' ':'-'}) %}
+        <option value="{{ tableSlug }}">
+          {{ tableTitle }}
+        </option>
+      {% endfor %}
+    </select>
+
+    {# — H3 that shows the current table’s title #}
+    <h3
+      id="current-table-heading-{{ block.id }}"
+      class="table-heading"
+    >
+      {{ tableBlocks[0].tableTitle }}
+    </h3>
+  </div>
+
+  {# — Render each table in its own container; hide all but the first #}
+  {% for tableBlock in tableBlocks %}
+    {% set tableData  = tableBlock.table %}
+    {% set tableTitle = tableBlock.tableTitle %}
+    {% set tableSlug  = tableTitle|lower|replace({' ':'-'}) %}
+
+    <div
+      class="table-container table-{{ block.id }}-{{ tableSlug }}"
+      style="{% if not loop.first %}display:none;{% endif %}"
+    >
+      <table>
+        <thead>
+          <tr>
+            {% for column in tableData.columns %}
+              <th
+                align="{{ column.align }}"
+                width="{{ column.width }}"
+              >
+                {{ column.heading }}
+              </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in tableData.rows %}
+            <tr>
+              {% for cell in row %}
+                <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endfor %}
+
+  {# — JS to:
+       1) Wire the dropdown → swap which container is visible
+       2) Update the H3 text
+       3) Push a URL hash for deep-linking #}
+  <script>
+    (function() {
+      // Grab our elements by their descriptive IDs
+      var tableDropdown       = document.getElementById('table-dropdown-{{ block.id }}');
+      var tableHeadingElement = document.getElementById('current-table-heading-{{ block.id }}');
+
+      // Build a JS map of slug → title, so we can lookup names quickly
+      var availableTables = {};
+      {% for tableBlock in tableBlocks %}
+        {% set tableTitle = tableBlock.tableTitle %}
+        {% set tableSlug  = tableTitle|lower|replace({' ':'-'}) %}
+        availableTables['{{ tableSlug }}'] = {
+          title: '{{ tableTitle|e('js') }}'
+        };
+      {% endfor %}
+
+      /**
+       * Show the table matching `slug`:
+       *  • hide all others
+       *  • update the <h3> text
+       *  • replace the URL hash without reloading
+       */
+      function displaySelectedTable(slug) {
+        Object.keys(availableTables).forEach(function(key) {
+          var container = document.querySelector('.table-{{ block.id }}-' + key);
+          if (!container) return;
+          container.style.display = (key === slug ? '' : 'none');
+        });
+
+        // Update the heading above the table
+        tableHeadingElement.textContent = availableTables[slug].title;
+
+        // Replace the URL hash for easy sharing / deep‐linking
+        history.replaceState(null, '', '#' + slug);
+      }
+
+      // When the dropdown changes, swap to that table
+      tableDropdown.addEventListener('change', function() {
+        displaySelectedTable(this.value);
+      });
+
+      // On page load: if there’s a hash in the URL, preselect it
+      var initialHash = window.location.hash.slice(1);
+      if (initialHash && availableTables[initialHash]) {
+        tableDropdown.value = initialHash;
+      }
+
+      // Finally, show whatever’s selected (first by default)
+      displaySelectedTable(tableDropdown.value);
+    })();
+  </script>
+{% endif %}

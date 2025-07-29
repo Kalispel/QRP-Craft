@@ -1,0 +1,92 @@
+.table-selector-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* style the <select> like a red button */
+.table-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #e10600;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+/* little down-arrow */
+.table-dropdown {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='%23fff' d='M0 0l6 6 6-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75em center;
+  background-size: 0.6em 0.4em;
+  padding-right: 2.5em; /* make space for the arrow */
+}
+
+/* the table title H3 */
+.table-heading {
+  margin: 0 0 0 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #fff;
+}
+
+/* container around each table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* the table itself */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* header row */
+.table-container thead th {
+  background: #1a1a1a;
+  padding: 0.75em;
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+/* alternating body rows */
+.table-container tbody tr:nth-child(odd)  { background: #333; }
+.table-container tbody tr:nth-child(even) { background: #444; }
+
+.table-container tbody td {
+  padding: 0.75em;
+  border-bottom: 1px solid #555;
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  /* shrink table text way down */
+  .table-container thead th,
+  .table-container tbody td {
+    font-size: 0.5rem;       /* super-small text */
+    line-height: 1.1;        /* tighten up line spacing */
+    padding: 0.3em 0.4em;    /* reduce padding */
+  }
+
+  /* also shrink the dropdown & heading if you like */
+  .table-dropdown {
+    font-size: 0.75rem;
+    padding: 0.4em 0.8em;
+  }
+
+  .table-heading {
+    font-size: 0.9rem;
+  }
+}

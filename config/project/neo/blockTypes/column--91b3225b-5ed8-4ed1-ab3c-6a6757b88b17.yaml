@@ -1,0 +1,26 @@
+childBlocks:
+  - customEmbed
+  - section
+  - components
+  - container
+  - styling
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: null
+field: 2ea47bbc-6f12-44ad-b685-61b5c862a07d # Page Builder
+group: null
+groupChildBlockTypes: true
+handle: column
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Column
+topLevel: false

@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  2b3716ae-bb5a-4ebb-b739-26ea8b6599fb:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-07T22:31:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6669fb74-35dc-464e-b925-4a4ac340ab7b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f2fa774f-4d2f-4053-a5a2-8e0ef2382539
+        userCondition: null
+handle: sections
+hasTitleField: false
+icon: null
+name: Sections
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,15 @@
+.page-builder{
+  border: 5px solid red !important;
+}
+
+.section {
+  border: 5px solid blue !important;
+}
+
+.column {
+  border: 5px solid orange !important;
+}
+
+.components {
+  border: 5px solid black !important;
+}

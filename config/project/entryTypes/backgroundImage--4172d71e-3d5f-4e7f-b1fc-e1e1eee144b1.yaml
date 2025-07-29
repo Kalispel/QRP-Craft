@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  05c1bc5b-1823-4cef-ae33-6b0dc3c511b5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-07T21:13:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 76d6cdc7-f69d-4c30-9139-060120bf0469 # Component URL
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 342f4ff8-7b4c-44c5-bfde-995c5895b79e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-08T18:52:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c50ae162-2ed3-4888-87f2-f195abdb58b5 # Image Darkness
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 957090b7-a2b1-4d8a-a652-213102b01e7a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d585c225-40ca-4542-a06f-2f3d18e81e04
+        userCondition: null
+handle: backgroundImage
+hasTitleField: false
+icon: null
+name: 'Background Image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

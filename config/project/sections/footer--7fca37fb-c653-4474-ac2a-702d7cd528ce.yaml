@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: c4507a00-c0e2-4961-a960-34dedb8309ac # Sponsors
+handle: footer
+maxAuthors: 1
+name: Footer
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  977676e9-99d4-478f-bc0c-cc4050051cf5: # qrp
+    enabledByDefault: true
+    hasUrls: true
+    template: footer.twig
+    uriFormat: footer
+type: single

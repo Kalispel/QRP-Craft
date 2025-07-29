@@ -1,0 +1,71 @@
+{# templates/_header.twig #}
+
+<header>
+  <div class="navbar">
+    <a href="{{siteUrl}}" class="logo-wrapper">
+      <img src="{{ siteUrl }}static/images/qrp-logo.svg" alt="Logo">
+    </a>
+
+    {% set sections = craft.app.entries.getAllSections() %}
+    {# Desktop links #}
+    <ul class="links">
+      {% for section in sections %}
+        {% set entry = craft.entries()
+          .section(section.handle)
+          .one() 
+        %}
+
+        {% if entry.regularPageBuilder %}
+          {% for block in entry.regularPageBuilder.level(1).all() %}
+            {% if block.showInNav %}
+              <li>
+                <a href="{{ entry.url }}">
+                  {{ section.name }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <a
+      class="action_btn"
+      href=""
+    >CONTACT US</a>
+
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- dropdown must be a UL -->
+  <ul class="dropdown_menu">
+    {% for section in sections %}
+        {% set entry = craft.entries()
+          .section(section.handle)
+          .one() 
+        %}
+
+        {% if entry.regularPageBuilder %}
+          {% for block in entry.regularPageBuilder.level(1).all() %}
+            {% if block.showInNav %}
+              <li>
+                <a href="{{ entry.url }}">
+                  {{ section.name }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+        {% endif %}
+      {% endfor %}
+    <li>
+      <a
+        class="action_btn"
+        href=""
+      >CONTACT US</a>
+    </li>
+  </ul>
+</header>

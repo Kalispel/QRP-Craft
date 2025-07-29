@@ -1,0 +1,91 @@
+color: null
+description: null
+fieldLayouts:
+  395dc385-dde0-4c7a-805c-059ebf10b812:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-06T04:09:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c7432327-05b1-4d74-b04f-798554b06036 # Padding Top (Pixels)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2517c0b-2526-4801-a3fd-33166d60f393
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-06T04:09:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 19c31ceb-a7bb-4eab-897a-9f162343ace3 # Padding Right (Pixels)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f05019c3-9614-43fa-8229-f2dc35f67c0a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-06T04:09:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e37ced52-f0ef-450f-8b26-bce3ed7ca97f # Padding Bottom (Pixels)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 134f33ea-3508-45fb-a3cb-6efff0fa8a1b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-06T04:09:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 31aae467-844e-4eb5-9534-061c1bc5d67e # Padding Left (Pixels)
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 898b062a-02b1-4119-bee4-93d0225cdded
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fa1b8a0e-ab63-41d6-ba0d-d822596a172b
+        userCondition: null
+handle: padding
+hasTitleField: false
+icon: null
+name: Padding
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

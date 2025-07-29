@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  1bfb5e05-9c1a-43c8-9271-bb3dd281065f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-06T03:40:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a248a5e7-94bf-4f63-9d43-a22e597ec470 # Custom Embed
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ce6be46-831c-487a-9603-68e656ef54a0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 59264df7-bb5a-4d2c-a396-a8e50352f056
+        userCondition: null
+handle: customEmbed
+hasTitleField: false
+icon: null
+name: 'Custom Embed'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  354c7496-9472-4c10-945d-abe3a18b6881:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-10T23:32:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: be024036-351c-423d-9cf7-6855dddf23c5 # Show In Nav
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ab81cdb-4ecd-4737-aeff-d87bdccc0a4b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bcd3e13f-0392-492e-9cf7-7a723459bad9
+        userCondition: null
+handle: showInNav
+hasTitleField: false
+icon: null
+name: 'Show In Nav'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

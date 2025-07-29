@@ -1,0 +1,37 @@
+childBlocks:
+  - customEmbed
+  - copy
+  - h1Heading
+  - eventCalendar
+  - button
+  - card
+  - h3Heading
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: null
+field: 2ea47bbc-6f12-44ad-b685-61b5c862a07d # Page Builder
+fieldLayouts:
+  7fd2e908-e405-44d1-9708-e519d5a926e1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Content
+        uid: e4b5fc70-a4da-4afa-88dd-56502f7e4eae
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: components
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Components
+topLevel: false

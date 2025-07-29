@@ -1,0 +1,48 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 656c2b85-c41c-4820-9494-ddfe278d183e # Copy
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  88638bff-9574-4868-95b4-767e0f6250a7:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-03T19:03:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7fc97af9-0634-46b2-88f4-05267632dfc0 # Copy
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c782ddeb-ce30-4149-8f0a-8d14ecaeed55
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a7485b37-704a-4c2d-85f5-c724e032ba23
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: copy
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Copy
+topLevel: false

@@ -1,0 +1,65 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: bf4854a6-dc7e-49aa-afe4-5a8a6716ded5 # Table
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  94f8f5dc-9c75-4736-af84-bca0113d33b5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-09T22:58:20+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bf71b605-2794-4aa0-8b05-6bb998ff4954 # Table Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f476d6e6-5ee3-4fc1-8633-1e8255ade8b2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-09T17:52:23+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dc72fe8c-a300-4418-bb10-258d3b110ff8 # Table
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 974ae60d-3c60-4b6d-87fe-b2b5793733c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 69907dda-1b9d-4ae5-95dc-df2aa609e809
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: table
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Table
+topLevel: false

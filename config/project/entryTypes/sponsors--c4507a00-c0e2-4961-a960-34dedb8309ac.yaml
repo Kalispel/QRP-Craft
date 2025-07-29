@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  636153cf-6aa4-48e2-b235-babfdfb38f3d:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-10T17:06:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cb47f35f-ec0a-4066-a291-2c2e8547ab57 # Sponsors
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cf7383a-f8d4-43c5-8fa0-a72b1e9c39e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0064bb1d-82c9-4dee-92bf-f6250d23ea94
+        userCondition: null
+handle: sponsors
+hasTitleField: false
+icon: null
+name: Sponsors
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

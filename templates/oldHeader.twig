@@ -1,0 +1,54 @@
+<header>
+  <div class="navbar">
+    {# Logo (uses the same wrapper & class names as your static version) #}
+    <a href="{{ siteUrl() }}" class="logo-wrapper">
+      <img class="logo"
+           src="{{ siteUrl() }}static/images/qrp-logo.svg"
+           alt="Sapphire Detail Logo">
+    </a>
+
+    {# Desktop links #}
+    <ul class="links">
+      {% for section in craft.app.entries.getAllSections() %}
+        {% set entry = craft.entries().section(section.handle).one() %}
+        {% if entry %}
+          {% if block.showInNav %}
+          <li><a href="{{ entry.url }}">{{ section.name }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {# Book/Contact button #}
+    <a class="action_btn"
+       href="https://jacksono03x.setmore.com"
+       id="Setmore_button_iframe">
+      Book Now
+    </a>
+
+    {# Mobile toggle #}
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  {# Mobile dropdown #}
+  <ul class="dropdown_menu">
+    {% for section in craft.app.entries.getAllSections() %}
+      {% set entry = craft.entries().section(section.handle).one() %}
+      {% if entry %}
+        {% for block in entry.regularPageBuilder.level(1).all() %}
+          {% if block.showInNav %}
+          <li><a href="{{ entry.url }}">{{ section.name }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    <li>
+      <a class="action_btn"
+         href="https://jacksono03x.setmore.com">
+        Book Now
+      </a>
+    </li>
+  </ul>
+</header>

@@ -1,0 +1,65 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: true
+entryType: 0ada324d-e352-4a29-a266-4049631fa4b7 # Button
+field: 22b3fc84-2fbb-4ddc-9ed2-2389dd334699 # Regular Page Builder
+fieldLayouts:
+  8d8f1b0e-2b19-42b2-a3b9-266f66bc530c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-07T18:33:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 34005200-1e86-4910-b074-9034d2ed3213 # Component Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d00c983-a322-4213-b43a-6a0d56f53cf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-07-07T18:33:54+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 76d6cdc7-f69d-4c30-9139-060120bf0469 # Component URL
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8b6165e-06eb-4ea9-9051-2a9b61c71969
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: df4925f1-f404-4624-b37b-c1c814f11858
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: button
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Button
+topLevel: false

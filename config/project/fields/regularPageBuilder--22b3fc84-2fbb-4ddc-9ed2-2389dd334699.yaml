@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: regularPageBuilder
+instructions: null
+name: 'Regular Page Builder'
+searchable: false
+settings:
+  maxBlocks: null
+  maxLevels: null
+  maxTopBlocks: null
+  minBlocks: null
+  minLevels: null
+  minTopBlocks: null
+  newBlockButtonLabel: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: benf\neo\Field

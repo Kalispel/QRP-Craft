@@ -1,0 +1,48 @@
+childBlocks: null
+color: null
+conditions: null
+description: ''
+enabled: false
+entryType: a542f72c-f52a-4f57-a6c5-b46a4f2a1fb4 # Custom Embed
+field: 2ea47bbc-6f12-44ad-b685-61b5c862a07d # Page Builder
+fieldLayouts:
+  683ff989-ec72-4556-8afa-29fa59924530:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-07-06T03:40:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a248a5e7-94bf-4f63-9d43-a22e597ec470 # Custom Embed
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e719972-4e36-4291-9373-2b0c90354195
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f840864b-2339-4ce5-848d-b866a2f513e9
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: customEmbed
+icon: null
+iconFilename: ''
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Custom Embed'
+topLevel: true
