@@ -33,7 +33,7 @@
     {% include 'pageBuilder/_renderBlock.twig' with { block: section, entry: entry } %}
   {% endfor %}
   {% if entry.viewBorders %}
-    {% do craft.app.view.registerCssFile(siteURL ~ 'static/css/borders.css') %}
+    {% do craft.app.view.registerCssFile(siteUrl ~ 'static/css/borders.css') %}
   {% endif %}
 </main>
 
